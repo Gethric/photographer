@@ -1,0 +1,12 @@
+@import "../base/typography";
+
+.navbar-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	width: 150px;
+	padding: 1%;
+	font-family: $raleway;
+	margin: 2%;
+}

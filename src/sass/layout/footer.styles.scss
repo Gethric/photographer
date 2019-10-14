@@ -1,0 +1,13 @@
+@import "../base/typography";
+@import "../base/base";
+
+.footer {
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $raleway;
+	font-size: 80%;
+	color: white;
+	background-color: $black;
+}
