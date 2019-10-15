@@ -4,14 +4,14 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import "./sass/app.styles.scss";
 import SignInSignUp from "./pages/sign-in-sign-up/SignInSignUp.page.";
-import Gallery from "./components/Gallery/Gallery.component";
+import Body from "./components/Body/Body.component";
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
 			<Switch>
-				<Route exact path="/" component={Gallery} />
+				<Route exact path="/" component={Body} />
 				<Route path="/signin" component={SignInSignUp} />
 			</Switch>
 			<Footer />

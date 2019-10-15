@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { XMasonry, XBlock } from "react-xmasonry";
 import PHOTOS from "../../assets/photos.assets";
+import "../../sass/components/card.styles.scss";
 
 class Gallery extends Component {
 	constructor() {
@@ -18,7 +19,7 @@ class Gallery extends Component {
 				{photos.map(({ id, imageUrl }) => (
 					<XBlock key={id}>
 						<div className="card">
-							<img src={imageUrl} alt="girl" />
+							<img className="foto" src={imageUrl} alt="girl" />
 						</div>
 					</XBlock>
 				))}
