@@ -1,8 +1,10 @@
 import React from "react";
-import "../../sass/components/navbar-item.styles.scss";
+import "./navbar-item.styles.scss";
 
-const NavbarItem = () => {
-	return <div className="navbar-item">NAV ITEM</div>;
-};
+const NavbarItem = ({ title, Url }) => (
+	<a className="NavbarItem" href={Url}>
+		{title.toUpperCase()}
+	</a>
+);
 
 export default NavbarItem;

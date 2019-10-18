@@ -1,6 +1,6 @@
 import React from "react";
 import Cart from "./Cart.component";
-import "../../sass/components/shop.styles.scss";
+import "./shop.styles.scss";
 
 const Shop = () => {
 	return (

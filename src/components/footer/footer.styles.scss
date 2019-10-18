@@ -1,7 +1,11 @@
-@import "../base/typography";
-@import "../base/base";
+@import "../../sass/base/typography";
+@import "../../sass/base/base";
 
 .footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	height: 5vh;
 	display: flex;
 	justify-content: center;

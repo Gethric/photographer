@@ -1,0 +1,11 @@
+@import "../../sass/base/typography";
+
+.about {
+	font-family: $raleway;
+	margin: 5% 10%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}

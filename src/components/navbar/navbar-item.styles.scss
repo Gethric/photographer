@@ -1,6 +1,6 @@
-@import "../base/typography";
+@import "../../sass/base/typography";
 
-.navbar-item {
+.NavbarItem {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,4 +9,6 @@
 	padding: 1%;
 	font-family: $raleway;
 	margin: 2%;
+	color: white;
+	text-decoration: none;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
-const GalleryItem = ({ imageUrl }) => {
-	return <img src={imageUrl} alt="girl"></img>;
+const GalleryItem = ({ imageUrl, alt }) => {
+	return <img src={imageUrl} alt={alt}></img>;
 };
 
 export default GalleryItem;

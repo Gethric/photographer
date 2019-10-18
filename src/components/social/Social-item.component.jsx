@@ -1,5 +1,5 @@
 import React from "react";
-import "../../sass/components/social-item.styes.scss";
+import "./social-item.styes.scss";
 
 const SocialItem = ({ id, title, link, imageUrl }) => {
 	return (

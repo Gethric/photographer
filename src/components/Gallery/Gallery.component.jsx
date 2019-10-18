@@ -16,10 +16,10 @@ class Gallery extends Component {
 		const { photos } = this.state;
 		return (
 			<XMasonry>
-				{photos.map(({ id, imageUrl }) => (
+				{photos.map(({ id, imageUrl, alt }) => (
 					<XBlock key={id}>
 						<div className="card">
-							<img className="foto" src={imageUrl} alt="girl" />
+							<img className="foto" src={imageUrl} alt={alt} />
 						</div>
 					</XBlock>
 				))}
