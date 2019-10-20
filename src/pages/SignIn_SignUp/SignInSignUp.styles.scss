@@ -1,0 +1,11 @@
+@import "../../sass/base/typography";
+
+.SignInSignUp {
+	position: relative;
+	top: 15vh;
+	width: 850px;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px auto;
+	font-family: $raleway;
+}

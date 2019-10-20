@@ -5,12 +5,12 @@ import Shop from "../shop/Shop.component";
 import Social from "../social/Social.component";
 import SignInIcon from "../SignIn_SignUp/SignInIcon.component";
 
-const Header = () => {
+const Header = ({ currentUser }) => {
 	return (
 		<div className="header">
 			<Social />
 			<Navbar />
-			<SignInIcon />
+			<SignInIcon currentUser={currentUser} />
 			<Shop />
 		</div>
 	);

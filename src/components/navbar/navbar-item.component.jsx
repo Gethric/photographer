@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar-item.styles.scss";
 
 const NavbarItem = ({ title, Url }) => (
-	<a className="NavbarItem" href={Url}>
+	<Link className="NavbarItem" to={Url}>
+		{" "}
 		{title.toUpperCase()}
-	</a>
+	</Link>
 );
 
 export default NavbarItem;

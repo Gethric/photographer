@@ -1,11 +1,12 @@
 .Contact_Form {
 	position: fixed;
-	width: 350px;
+	width: 380px;
 	display: flex;
 	flex-direction: column;
 	background-color: white;
 	border: 1px solid black;
 	border-radius: 5px;
+	padding: 5px;
 
 	.title {
 		margin: 10px 0;
