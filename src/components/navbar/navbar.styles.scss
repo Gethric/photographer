@@ -1,23 +1,16 @@
 @import "../../sass/base/typography";
 
-.In_Out {
-	color: white;
-	font-family: $raleway;
-}
-
 .NavBar {
 	display: flex;
 	flex-direction: row;
+	z-index: 1;
 }
 
 .NavbarItem {
-	justify-content: center;
-	align-items: center;
 	height: 20px;
 	width: 150px;
-	padding: 1%;
+	margin: 35px;
 	font-family: $raleway;
-	margin: 2%;
 	color: white;
 	text-decoration: none;
 }

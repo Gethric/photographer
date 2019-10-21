@@ -7,13 +7,13 @@ import "./navbar.styles.scss";
 const Navbar = ({ currentUser }) => (
 	<div className="Navbar">
 		<Link className="NavbarItem" to="/">
-			SHOP
+			HOME
 		</Link>
 		<Link className="NavbarItem" to="/about">
 			ABOUT
 		</Link>
 		<Link className="NavbarItem" to="/photography">
-			PHOTOTGRAPHY
+			PHOTOGRAPHY
 		</Link>
 		<Link className="NavbarItem" to="/film">
 			FILM
@@ -22,11 +22,11 @@ const Navbar = ({ currentUser }) => (
 			CONTACT
 		</Link>
 		{currentUser ? (
-			<div className="In_Out" onClick={() => auth.signOut()}>
+			<div className="NavbarItem" onClick={() => auth.signOut()}>
 				SIGN OUT
 			</div>
 		) : (
-			<Link className="In_Out" to="/signin">
+			<Link className="NavbarItem" to="/signin">
 				SIGN IN
 			</Link>
 		)}
