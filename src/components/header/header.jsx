@@ -1,15 +1,22 @@
 import React from "react";
 import "./header.styles.scss";
 import Navbar from "../navbar/navbar.component";
-import Shop from "../shop/Shop.component";
 import Social from "../social/Social.component";
+import Cart from "../shop/Cart.component";
+import CartDropdown from "../CartDropdown/CartDropdown.component";
+import { connect } from "react-redux";
 
-const Header = () => (
+const Header = ({ hidden }) => (
 	<div className="header">
 		<Social />
 		<Navbar />
-		<Shop />
+		<Cart />
+		{hidden ? null : <CartDropdown />}
 	</div>
 );
 
-export default Header;
+const mapStateToProps = ({ cart: { hidden } }) => ({
+	hidden
+});
+
+export default connect(mapStateToProps)(Header);
