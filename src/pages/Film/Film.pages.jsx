@@ -4,10 +4,12 @@ import "./Film.styles.scss";
 class Film extends Component {
 	constructor() {
 		super();
+
+		this.state = "FILM";
 	}
 
 	render() {
-		return <div></div>;
+		return <div>FILM</div>;
 	}
 }
 

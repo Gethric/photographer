@@ -1,5 +1,7 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { setCurrentUser } from "./redux/user/user.actions";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Body from "./components/Body/Body.component";
@@ -13,32 +15,23 @@ import { auth, createUserProfileDocument } from "./Firebase/Firebase.utils";
 import "./sass/app.styles.scss";
 
 class App extends React.Component {
-	constructor() {
-		super();
-
-		this.state = {
-			currentUser: null
-		};
-	}
-
 	unsubscribeFromAuth = null;
 
 	componentDidMount() {
+		const { setCurrentUser } = this.props;
+
 		this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
 			if (userAuth) {
 				const userRef = await createUserProfileDocument(userAuth);
 
 				userRef.onSnapshot(snapShot => {
-					this.setState({
-						currentUser: {
-							id: snapShot.id,
-							...snapShot.data()
-						}
+					setCurrentUser({
+						id: snapShot.id,
+						...snapShot.data()
 					});
 				});
-				console.log(this.state);
 			} else {
-				this.setState({ currentUser: userAuth });
+				setCurrentUser(userAuth);
 			}
 		});
 	}
@@ -50,14 +43,20 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Header currentUser={this.state.currentUser} />
+				<Header />
 				<Switch>
 					<Route exact path="/" component={Body} />
 					<Route path="/about" component={About} />
 					<Route path="/photography" component={Photography} />
 					<Route path="/film" component={Film} />
 					<Route path="/contact" component={ContactForm} />
-					<Route path="/signin" component={SignInSignUp} />
+					<Route
+						exact
+						path="/signin"
+						render={() =>
+							this.props.currentUser ? <Redirect to="/" /> : <SignInSignUp />
+						}
+					/>
 				</Switch>
 				<Footer />
 			</div>
@@ -65,4 +64,15 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+const mapStateToProps = ({ user }) => ({
+	currentUser: user.currentUser
+});
+
+const mapDispatchToProps = dispatch => ({
+	setCurrentUser: user => dispatch(setCurrentUser(user))
+});
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(App);

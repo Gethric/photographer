@@ -4,13 +4,11 @@ import SignUp from "../../components/SignIn_SignUp/SignUp.component";
 
 import "./SignInSignUp.styles.scss";
 
-const SignInSignUp = () => {
-	return (
-		<div className="SignInSignUp">
-			<SignIn />
-			<SignUp />
-		</div>
-	);
-};
+const SignInSignUp = () => (
+	<div className="SignInSignUp">
+		<SignIn />
+		<SignUp />
+	</div>
+);
 
 export default SignInSignUp;
