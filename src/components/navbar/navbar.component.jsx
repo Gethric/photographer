@@ -1,40 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { auth } from "../../Firebase/Firebase.utils";
 import "./navbar.styles.scss";
+import Dropdown from "../Drop-down/Dropdown.component";
+import PhotosLink from "../PhotosLink/PhotosLink.component";
+import FilmLink from "../FilmLink/FilmLink.component";
+import HomeLink from "../HomeLink/HomeLink.component";
+import AboutLink from "../AboutLink/AboutLink.component";
+import ContactLink from "../ContactLink/ContactLink.component";
+import SignInLink from "../SignInLink/SignInLink.component";
 
-const Navbar = ({ currentUser }) => (
+const Navbar = ({ hidden }) => (
 	<div className="Navbar">
-		<Link className="NavbarItem" to="/">
-			HOME
-		</Link>
-		<Link className="NavbarItem" to="/about">
-			ABOUT
-		</Link>
-		<Link className="NavbarItem" to="/photography">
-			PHOTOGRAPHY
-		</Link>
-		<Link className="NavbarItem" to="/film">
-			FILM
-		</Link>
-		<Link className="NavbarItem" to="/contact">
-			CONTACT
-		</Link>
-		{currentUser ? (
-			<div className="NavbarItem" onClick={() => auth.signOut()}>
-				SIGN OUT
-			</div>
-		) : (
-			<Link className="NavbarItem" to="/signin">
-				SIGN IN
-			</Link>
-		)}
+		<HomeLink />
+		<AboutLink />
+		<PhotosLink />
+		{hidden ? null : <Dropdown />}
+		<FilmLink />
+		{hidden ? null : <Dropdown />}
+		<ContactLink />
+		<SignInLink />
 	</div>
 );
 
-const mapStateToProps = state => ({
-	currentUser: state.user.currentUser
+const mapStateToProps = ({ dropdown: { hidden } }) => ({
+	hidden
 });
 
 export default connect(mapStateToProps)(Navbar);
