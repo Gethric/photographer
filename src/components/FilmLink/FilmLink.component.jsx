@@ -1,16 +1,22 @@
 import React from "react";
 import { connect } from "react-redux";
-import { toggleDropdownHidden } from "../../redux/dropdown/dropdown.actions";
+import { toggleFilmDropdownHidden } from "../../redux/dropdown/dropdown.actions";
 import "./filmlink.styles.scss";
+import { Link } from "react-router-dom";
 
-const FilmLink = ({ toggleDropdownHidden }) => (
-	<div className="filmlink" onClick={toggleDropdownHidden}>
-		<div className="NavbarItem">FILM</div>
-	</div>
+const FilmLink = ({ toggleFilmDropdownHidden }) => (
+	<Link
+		className="NavbarItem"
+		to="/film"
+		onMouseOver={toggleFilmDropdownHidden}
+		onMouseLeave={toggleFilmDropdownHidden}
+	>
+		FILM
+	</Link>
 );
 
 const mapDispatchToProps = dispatch => ({
-	toggleDropdownHidden: () => dispatch(toggleDropdownHidden())
+	toggleFilmDropdownHidden: () => dispatch(toggleFilmDropdownHidden())
 });
 
 export default connect(

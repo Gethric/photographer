@@ -1,0 +1,19 @@
+@keyframes dropdown {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 340px;
+	}
+}
+
+@keyframes snapup {
+	0% {
+		height: 340px;
+	}
+
+	100% {
+		height: 0px;
+	}
+}

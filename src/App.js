@@ -10,6 +10,7 @@ import Photography from "./pages/Photography/Photography.pages";
 import Film from "./pages/Film/Film.pages";
 import ContactForm from "./pages/Contact/Contact.pages";
 import SignInSignUp from "./pages/SignIn_SignUp/SignInSignUp.pages";
+import Shop from "./pages/Shop/Shop.pages";
 import { auth, createUserProfileDocument } from "./Firebase/Firebase.utils";
 
 import "./sass/app.styles.scss";
@@ -50,6 +51,7 @@ class App extends React.Component {
 					<Route path="/photography" component={Photography} />
 					<Route path="/film" component={Film} />
 					<Route path="/contact" component={ContactForm} />
+					<Route path="/shop" component={Shop} />
 					<Route
 						exact
 						path="/signin"

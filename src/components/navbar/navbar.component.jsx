@@ -9,21 +9,22 @@ import AboutLink from "../AboutLink/AboutLink.component";
 import ContactLink from "../ContactLink/ContactLink.component";
 import SignInLink from "../SignInLink/SignInLink.component";
 
-const Navbar = ({ hidden }) => (
+const Navbar = ({ hidephotos, hidefilm }) => (
 	<div className="Navbar">
 		<HomeLink />
 		<AboutLink />
 		<PhotosLink />
-		{hidden ? null : <Dropdown />}
+		{hidephotos ? null : <Dropdown id="photo" />}
 		<FilmLink />
-		{hidden ? null : <Dropdown />}
+		{hidefilm ? null : <Dropdown id="film" />}
 		<ContactLink />
 		<SignInLink />
 	</div>
 );
 
-const mapStateToProps = ({ dropdown: { hidden } }) => ({
-	hidden
+const mapStateToProps = ({ dropdown: { hidephotos, hidefilm } }) => ({
+	hidephotos,
+	hidefilm
 });
 
 export default connect(mapStateToProps)(Navbar);

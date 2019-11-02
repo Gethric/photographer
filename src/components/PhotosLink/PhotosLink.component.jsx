@@ -1,16 +1,22 @@
 import React from "react";
 import { connect } from "react-redux";
-import { toggleDropdownHidden } from "../../redux/dropdown/dropdown.actions";
+import { togglePhotoDropdownHidden } from "../../redux/dropdown/dropdown.actions";
 import "./photoslink.styles.scss";
+import { Link } from "react-router-dom";
 
-const PhotosLink = ({ toggleDropdownHidden }) => (
-	<div className="photoslink" onClick={toggleDropdownHidden}>
-		<div className="NavbarItem">PHOTOGRAPHY</div>
-	</div>
+const PhotosLink = ({ togglePhotoDropdownHidden }) => (
+	<Link
+		className="NavbarItem"
+		to="/photography"
+		onMouseOver={togglePhotoDropdownHidden}
+		onMouseLeave={togglePhotoDropdownHidden}
+	>
+		PHOTOGRAPHY
+	</Link>
 );
 
 const mapDispatchToProps = dispatch => ({
-	toggleDropdownHidden: () => dispatch(toggleDropdownHidden())
+	togglePhotoDropdownHidden: () => dispatch(togglePhotoDropdownHidden())
 });
 
 export default connect(

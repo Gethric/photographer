@@ -1,15 +1,18 @@
-.dropdown {
+@import "../../sass/base/animations";
+
+#photo,
+#film {
 	position: absolute;
-	width: 240px;
+	width: 150px;
 	height: 340px;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	border: 1px solid black;
-	background-color: white;
-	top: 70px;
-	right: 500px;
+	border: 1px solid white;
+	background-color: black;
+	top: 75px;
 	z-index: 5;
+	animation: dropdown 0.25s ease-out;
 
 	.items {
 		height: 240px;
@@ -21,4 +24,12 @@
 	button {
 		margin-top: auto;
 	}
+}
+
+#photo {
+	right: 567px;
+}
+
+#film {
+	right: 375px;
 }
