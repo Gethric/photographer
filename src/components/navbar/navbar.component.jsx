@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "./navbar.styles.scss";
+import { createStructuredSelector } from "reselect";
 import Dropdown from "../Drop-down/Dropdown.component";
 import PhotosLink from "../PhotosLink/PhotosLink.component";
 import FilmLink from "../FilmLink/FilmLink.component";
@@ -8,6 +8,12 @@ import HomeLink from "../HomeLink/HomeLink.component";
 import AboutLink from "../AboutLink/AboutLink.component";
 import ContactLink from "../ContactLink/ContactLink.component";
 import SignInLink from "../SignInLink/SignInLink.component";
+
+import "./navbar.styles.scss";
+import {
+	hidePhotosSelector,
+	hideFilmSelector
+} from "../../redux/dropdown/dropdown.selectors";
 
 const Navbar = ({ hidephotos, hidefilm }) => (
 	<div className="Navbar">
@@ -22,9 +28,9 @@ const Navbar = ({ hidephotos, hidefilm }) => (
 	</div>
 );
 
-const mapStateToProps = ({ dropdown: { hidephotos, hidefilm } }) => ({
-	hidephotos,
-	hidefilm
+const mapStateToProps = createStructuredSelector({
+	hidephotos: hidePhotosSelector,
+	hidefilm: hideFilmSelector
 });
 
 export default connect(mapStateToProps)(Navbar);

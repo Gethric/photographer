@@ -1,3 +1,6 @@
+@import "../../sass/base/typography";
+@import "../../sass/base/base";
+
 .cart_dropdown {
 	position: absolute;
 	width: 240px;
@@ -10,6 +13,12 @@
 	top: 90px;
 	right: 40px;
 	z-index: 5;
+
+	.empty-message {
+		font-family: $raleway;
+		margin: 50px auto;
+		color: grey;
+	}
 
 	.cart_items {
 		height: 240px;
