@@ -1,15 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+
+import Preview from "../../components/Preview/Preview.component";
 import { itemsSelector } from "../../redux/photoshop/photoshop.selectors";
 
-import "../../sass/components/card.styles.scss";
-import GalleryItem from "./Gallery-item.component";
+import "./Photoshop.styles.scss";
 
-const Gallery = ({ photos }) => (
-	<div className="wrapper">
+const Photoshop = ({ photos }) => (
+	<div className="photoshop-page">
 		{photos.map(({ id, ...otherPhotosProps }) => (
-			<GalleryItem key={id} {...otherPhotosProps} />
+			<Preview key={id} {...otherPhotosProps} />
 		))}
 	</div>
 );
@@ -21,4 +22,4 @@ const mapStateToProps = createStructuredSelector({
 export default connect(
 	null,
 	mapStateToProps
-)(Gallery);
+)(Photoshop);

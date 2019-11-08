@@ -9,11 +9,10 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Body from "./components/Body/Body.component";
 import About from "./pages/About/About.pages";
-import Photography from "./pages/Photography/Photography.pages";
+import Photoshop from "./pages/Photoshop/Photoshop.pages";
 import Film from "./pages/Film/Film.pages";
 import ContactForm from "./pages/Contact/Contact.pages";
 import SignInSignUp from "./pages/SignIn_SignUp/SignInSignUp.pages";
-import Shop from "./pages/Shop/Shop.pages";
 import Checkout from "./pages/Checkout/Checkout.page";
 
 import "./sass/app.styles.scss";
@@ -51,10 +50,9 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={Body} />
 					<Route path="/about" component={About} />
-					<Route path="/photography" component={Photography} />
+					<Route path="/photoshop" component={Photoshop} />
 					<Route path="/film" component={Film} />
 					<Route path="/contact" component={ContactForm} />
-					<Route path="/shop" component={Shop} />
 					<Route exact path="/checkout" component={Checkout} />
 					<Route
 						exact

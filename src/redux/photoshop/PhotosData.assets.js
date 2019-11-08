@@ -1,4 +1,4 @@
-const PHOTOS2 = [
+const PHOTOS_DATA = [
 	{
 		id: 1,
 		title: "Fashion",
@@ -308,4 +308,4 @@ const PHOTOS2 = [
 	}
 ];
 
-export default PHOTOS2;
+export default PHOTOS_DATA;
