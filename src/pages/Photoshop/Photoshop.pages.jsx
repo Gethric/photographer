@@ -3,23 +3,20 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import Preview from "../../components/Preview/Preview.component";
-import { itemsSelector } from "../../redux/photoshop/photoshop.selectors";
+import { selectItems } from "../../redux/photoshop/photosSelector.selectors";
 
 import "./Photoshop.styles.scss";
 
-const Photoshop = ({ photos }) => (
+const Photoshop = ({ items }) => (
 	<div className="photoshop-page">
-		{photos.map(({ id, ...otherPhotosProps }) => (
+		{items.map(({ id, ...otherPhotosProps }) => (
 			<Preview key={id} {...otherPhotosProps} />
 		))}
 	</div>
 );
 
 const mapStateToProps = createStructuredSelector({
-	photos: itemsSelector
+	items: selectItems
 });
 
-export default connect(
-	null,
-	mapStateToProps
-)(Photoshop);
+export default connect(mapStateToProps)(Photoshop);

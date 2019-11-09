@@ -1,7 +1,7 @@
 import PHOTOS_DATA from "./PhotosData.assets";
 
 const INITIAL_STATE = {
-	photoshop: PHOTOS_DATA
+	photos: PHOTOS_DATA
 };
 
 const photosReducer = (state = INITIAL_STATE, action) => {

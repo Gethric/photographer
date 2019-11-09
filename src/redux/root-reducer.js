@@ -4,7 +4,7 @@ import storage from "redux-persist/lib/storage";
 
 import userReducer from "./user/user.reducer";
 import cartReducer from "./cart/cart.reducer";
-import photosReducer from "./photoshop/photoshop.reducer";
+import photosReducer from "./photoshop/photosReducer.reducer";
 import dropdownReducer from "./dropdown/dropdown.reducer";
 
 const persistConfig = {
@@ -16,8 +16,8 @@ const persistConfig = {
 const rootReducer = combineReducers({
 	user: userReducer,
 	cart: cartReducer,
-	dropdown: dropdownReducer,
-	photos: photosReducer
+	photos: photosReducer,
+	dropdown: dropdownReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

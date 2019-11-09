@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const PhotosLink = ({ togglePhotoDropdownHidden }) => (
 	<Link
 		className="NavbarItem"
-		to="/photography"
+		to="/photoshop"
 		onMouseOver={togglePhotoDropdownHidden}
 		onMouseLeave={togglePhotoDropdownHidden}
 	>
