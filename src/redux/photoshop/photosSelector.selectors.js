@@ -1,9 +1,6 @@
 import { createSelector } from "reselect";
 
-const selectPhotos = state => {
-	console.log(state);
-	return state.photos.photos;
-};
+const selectPhotos = state => state.photos;
 
 export const selectItems = createSelector(
 	[selectPhotos],
