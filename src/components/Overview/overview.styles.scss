@@ -1,0 +1,10 @@
+@import "../../sass/base/typography";
+@import "../../sass/base/base";
+
+.overview {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	padding: 30px;
+	font-family: $raleway;
+}

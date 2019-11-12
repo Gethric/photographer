@@ -1,22 +1,15 @@
 import React from "react";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-
-import Preview from "../../components/Preview/Preview.component";
-import { selectItems } from "../../redux/photoshop/photosSelector.selectors";
+import Overview from "../../components/Overview/Overview.component";
 
 import "./Photoshop.styles.scss";
+import { Route } from "react-router-dom";
+import CollectionPage from "../Collection/Collection.page";
 
-const Photoshop = ({ items }) => (
+const Photoshop = ({ match }) => (
 	<div className="photoshop-page">
-		{items.map(({ id, ...otherPhotosProps }) => (
-			<Preview key={id} {...otherPhotosProps} />
-		))}
+		<Route exact path={`${match.path}`} component={Overview} />
+		<Route path={`${match.path}/:collectionId`} component={CollectionPage} />
 	</div>
 );
 
-const mapStateToProps = createStructuredSelector({
-	items: selectItems
-});
-
-export default connect(mapStateToProps)(Photoshop);
+export default Photoshop;

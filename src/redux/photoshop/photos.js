@@ -1,5 +1,5 @@
-const PHOTOS_DATA = [
-	{
+const PHOTOS_DATA = {
+	fashion: {
 		id: 1,
 		title: "Fashion",
 		routeName: "fashion",
@@ -94,7 +94,7 @@ const PHOTOS_DATA = [
 			}
 		]
 	},
-	{
+	places: {
 		id: 2,
 		title: "Places",
 		routeName: "places",
@@ -165,7 +165,7 @@ const PHOTOS_DATA = [
 			}
 		]
 	},
-	{
+	events: {
 		id: 3,
 		title: "Events",
 		routeName: "events",
@@ -306,6 +306,6 @@ const PHOTOS_DATA = [
 			}
 		]
 	}
-];
+};
 
 export default PHOTOS_DATA;

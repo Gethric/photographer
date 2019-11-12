@@ -1,4 +1,4 @@
-import PHOTOS_DATA from "./PhotosData.assets";
+import PHOTOS_DATA from "./photos";
 
 const INITIAL_STATE = {
 	photos: PHOTOS_DATA

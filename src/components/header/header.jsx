@@ -2,7 +2,7 @@ import React from "react";
 import "./header.styles.scss";
 import Navbar from "../navbar/navbar.component";
 import Social from "../social/Social.component";
-import Cart from "../shop/Cart.component";
+import Cart from "../Cart/Cart.component";
 import CartDropdown from "../CartDropdown/CartDropdown.component";
 import { connect } from "react-redux";
 import { cartHiddenSelector } from "../../redux/cart/cart.selectors";
