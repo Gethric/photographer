@@ -4,18 +4,17 @@
 #film {
 	position: absolute;
 	width: 150px;
-	height: 340px;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
 	border: 1px solid white;
 	background-color: black;
-	top: 75px;
+	top: 65px;
 	z-index: 5;
-	animation: dropdown 0.25s ease-out;
+	animation: dropdown 0.25s linear;
 
-	.items {
-		height: 240px;
+	.item {
+		height: 40px;
 		display: flex;
 		flex-direction: column;
 		overflow: scroll;
@@ -27,7 +26,7 @@
 }
 
 #photo {
-	right: 567px;
+	right: 500px;
 }
 
 #film {

@@ -1,16 +1,16 @@
 import React from "react";
-import ItemPreview from "./ItemPreview.component";
+import Item from "../Item/Item.component";
 
 import "./preview.styles.scss";
 
 const Preview = ({ title, items }) => (
 	<div className="preview">
 		<h1 className="title">{title.toUpperCase()}</h1>
-		<div className="item">
+		<div className="item-preview">
 			{items
 				.filter((item, idx) => idx < 4)
 				.map(item => (
-					<ItemPreview key={item.id} item={item} />
+					<Item key={item.id} item={item} />
 				))}
 		</div>
 	</div>

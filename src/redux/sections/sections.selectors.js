@@ -1,9 +1,6 @@
 import { createSelector } from "reselect";
 
-const selectSections = state => {
-	console.log(state);
-	return state.sections;
-};
+const selectSections = state => state.sections;
 
 export const selectSectionsSections = createSelector(
 	[selectSections],

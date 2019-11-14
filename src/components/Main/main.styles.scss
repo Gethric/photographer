@@ -1,0 +1,30 @@
+@import "../../sass/base/base";
+@import "../../sass/base/typography";
+
+.wrapper {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.main {
+	position: fixed;
+	top: 30vh;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: black;
+	font-family: $raleway;
+	z-index: 1;
+}
+
+.video-background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}

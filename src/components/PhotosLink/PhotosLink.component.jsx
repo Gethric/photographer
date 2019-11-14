@@ -8,8 +8,8 @@ const PhotosLink = ({ togglePhotoDropdownHidden }) => (
 	<Link
 		className="NavbarItem"
 		to="/photoshop"
-		onMouseOver={togglePhotoDropdownHidden}
-		onMouseLeave={togglePhotoDropdownHidden}
+		onClick={togglePhotoDropdownHidden}
+		//onMouseLeave={togglePhotoDropdownHidden}
 	>
 		PHOTOGRAPHY
 	</Link>

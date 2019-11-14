@@ -1,0 +1,14 @@
+@import "../../sass/base/base";
+@import "../../sass/base/typography";
+
+.section {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	font-family: $raleway;
+	border: 1px solid white;
+	margin-top: 5px;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+}

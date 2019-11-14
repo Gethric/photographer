@@ -7,6 +7,7 @@ import cartReducer from "./cart/cart.reducer";
 import photoshopReducer from "./photoshop/photoshop.reducer";
 import dropdownReducer from "./dropdown/dropdown.reducer";
 import sectionsReducer from "./sections/sections.reducer";
+import videoReducer from "./video/video.reducer";
 
 const persistConfig = {
 	key: "root",
@@ -19,7 +20,8 @@ const rootReducer = combineReducers({
 	cart: cartReducer,
 	photoshop: photoshopReducer,
 	dropdown: dropdownReducer,
-	sections: sectionsReducer
+	sections: sectionsReducer,
+	video: videoReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

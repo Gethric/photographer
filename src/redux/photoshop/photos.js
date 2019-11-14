@@ -7,7 +7,7 @@ const PHOTOS_DATA = {
 			{
 				id: 1,
 				name: "beautifulgirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/beautifulgirl.jpg",
+				imageUrl: "https://i.ibb.co/nbngx6G/beautifulgirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -15,7 +15,7 @@ const PHOTOS_DATA = {
 			{
 				id: 2,
 				name: "chaisegirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/chaisegirl.jpg",
+				imageUrl: "https://i.ibb.co/hF3vNGh/chaisegirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -23,7 +23,7 @@ const PHOTOS_DATA = {
 			{
 				id: 3,
 				name: "citygirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/citygirl.jpg",
+				imageUrl: "https://i.ibb.co/7jWVnFZ/citygirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -31,7 +31,7 @@ const PHOTOS_DATA = {
 			{
 				id: 4,
 				name: "forestgirls",
-				imageUrl: "./images/Josue_photo_collection/Fashion/forestgirls.jpg",
+				imageUrl: "https://i.ibb.co/nmLsF7w/forestgirls.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -39,7 +39,7 @@ const PHOTOS_DATA = {
 			{
 				id: 5,
 				name: "lightsgirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/lightsgirl.jpg",
+				imageUrl: "https://i.ibb.co/pw9Ckqs/lightsgirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -47,7 +47,7 @@ const PHOTOS_DATA = {
 			{
 				id: 6,
 				name: "mirrorgirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/mirrorgirl.jpg",
+				imageUrl: "https://i.ibb.co/1QW4L1g/mirrorgirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -55,7 +55,7 @@ const PHOTOS_DATA = {
 			{
 				id: 7,
 				name: "notgirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/notgirl.jpg",
+				imageUrl: "https://i.ibb.co/1dnkz6c/notgirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -63,7 +63,7 @@ const PHOTOS_DATA = {
 			{
 				id: 8,
 				name: "pointygirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/pointygirl.jpg",
+				imageUrl: "https://i.ibb.co/tCYLqqc/pointygirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -71,7 +71,7 @@ const PHOTOS_DATA = {
 			{
 				id: 9,
 				name: "poppygirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/poppygirl.jpg",
+				imageUrl: "https://i.ibb.co/Jq26WCK/poppygirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -79,7 +79,7 @@ const PHOTOS_DATA = {
 			{
 				id: 10,
 				name: "screengirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/screengirl.jpg",
+				imageUrl: "https://i.ibb.co/BwH0XMs/screengirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -87,7 +87,7 @@ const PHOTOS_DATA = {
 			{
 				id: 11,
 				name: "sungirl",
-				imageUrl: "./images/Josue_photo_collection/Fashion/sungirl.jpg",
+				imageUrl: "https://i.ibb.co/x6KS6mY/sungirl.jpg",
 				alt: "girl",
 				price: 35,
 				code: "PFw45hw"
@@ -173,7 +173,7 @@ const PHOTOS_DATA = {
 			{
 				id: 20,
 				name: "quince1",
-				imageUrl: "./images/Josue_photo_collection/Events/quince1.jpg",
+				imageUrl: "https://i.ibb.co/xgRJz26/quince1.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -181,7 +181,7 @@ const PHOTOS_DATA = {
 			{
 				id: 21,
 				name: "quince2",
-				imageUrl: "./images/Josue_photo_collection/Events/quince2.jpg",
+				imageUrl: "https://i.ibb.co/KLKNKjm/quince2.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -189,7 +189,7 @@ const PHOTOS_DATA = {
 			{
 				id: 22,
 				name: "quince3",
-				imageUrl: "./images/Josue_photo_collection/Events/quince3.jpg",
+				imageUrl: "https://i.ibb.co/GCGk0v6/quince3.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -197,7 +197,7 @@ const PHOTOS_DATA = {
 			{
 				id: 23,
 				name: "quince4",
-				imageUrl: "./images/Josue_photo_collection/Events/quince4.jpg",
+				imageUrl: "https://i.ibb.co/dKqGTDc/quince4.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -205,7 +205,7 @@ const PHOTOS_DATA = {
 			{
 				id: 24,
 				name: "quince5",
-				imageUrl: "./images/Josue_photo_collection/Events/quince5.jpg",
+				imageUrl: "https://i.ibb.co/MCpKPyM/quince5.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -213,7 +213,7 @@ const PHOTOS_DATA = {
 			{
 				id: 25,
 				name: "quince6",
-				imageUrl: "./images/Josue_photo_collection/Events/quince6.jpg",
+				imageUrl: "https://i.ibb.co/SPvgX38/quince6.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -221,7 +221,7 @@ const PHOTOS_DATA = {
 			{
 				id: 26,
 				name: "quince7",
-				imageUrl: "./images/Josue_photo_collection/Events/quince7.jpg",
+				imageUrl: "https://i.ibb.co/fth22Px/quince7.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"
@@ -229,7 +229,7 @@ const PHOTOS_DATA = {
 			{
 				id: 27,
 				name: "wedding1",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding1.jpg",
+				imageUrl: "https://i.ibb.co/3YqrYbK/wedding1.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
@@ -237,7 +237,7 @@ const PHOTOS_DATA = {
 			{
 				id: 28,
 				name: "wedding2",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding2.jpg",
+				imageUrl: "https://i.ibb.co/N6rTj7Z/wedding2.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
@@ -245,7 +245,7 @@ const PHOTOS_DATA = {
 			{
 				id: 29,
 				name: "wedding3",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding3.jpg",
+				imageUrl: "https://i.ibb.co/xgKSJzJ/wedding3.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
@@ -253,7 +253,7 @@ const PHOTOS_DATA = {
 			{
 				id: 30,
 				name: "wedding4",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding4.jpg",
+				imageUrl: "https://i.ibb.co/HG7GXFW/wedding4.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
@@ -261,7 +261,7 @@ const PHOTOS_DATA = {
 			{
 				id: 31,
 				name: "wedding5",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding5.jpg",
+				imageUrl: "https://i.ibb.co/RBbyyQK/wedding5.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
@@ -269,40 +269,10 @@ const PHOTOS_DATA = {
 			{
 				id: 32,
 				name: "wedding6",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding6.jpg",
+				imageUrl: "https://i.ibb.co/wzdQHt7/wedding6.jpg",
 				alt: "wedding",
 				price: 35,
 				code: "PFw45hw"
-			},
-			{
-				id: 33,
-				name: "wedding7",
-				imageUrl: "./images/Josue_photo_collection/Events/wedding7.jpg",
-				alt: "wedding",
-				price: 35,
-				code: "PFw45hw"
-			},
-			{
-				id: 34,
-				name: "waterboulder",
-				imageUrl: "./images/Josue_photo_collection/Events/waterboulder.jpg",
-				alt: "event",
-				price: 35,
-				code: "PFw45hw"
-			},
-			{
-				id: 35,
-				name: "waterboulder",
-				imageUrl: "./images/Josue_photo_collection/Events/waterboulder.jpg",
-				alt: "event",
-				price: 35,
-				code: "PFw45hw"
-			},
-			{
-				id: 36,
-				name: "waterboulder",
-				imageUrl: "./images/Josue_photo_collection/Events/waterboulder.jpg",
-				alt: "event"
 			}
 		]
 	}

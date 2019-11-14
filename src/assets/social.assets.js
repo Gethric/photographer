@@ -3,13 +3,13 @@ const ICONS = [
 		id: 1,
 		title: "facebook",
 		link: "https://www.facebook.com",
-		imageUrl: "./images/facebook.png"
+		imageUrl: "https://i.ibb.co/JtJNtmv/facebook.png"
 	},
 	{
 		id: 2,
 		title: "instagram",
 		link: "https://www.instagram.com",
-		imageUrl: "./images/instagram.png"
+		imageUrl: "https://i.ibb.co/tKWfkK6/instagram.png"
 	}
 ];
 
