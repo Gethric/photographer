@@ -102,7 +102,7 @@ const PHOTOS_DATA = {
 			{
 				id: 12,
 				name: "clearwater",
-				imageUrl: "./images/Josue_photo_collection/Places/clearwater.jpg",
+				imageUrl: "https://i.ibb.co/TtTy1WB/clearwater.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -110,7 +110,7 @@ const PHOTOS_DATA = {
 			{
 				id: 13,
 				name: "emeraldriver",
-				imageUrl: "./images/Josue_photo_collection/Places/emeraldriver.jpg",
+				imageUrl: "https://i.ibb.co/PcftSMt/emeraldriver.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -118,7 +118,7 @@ const PHOTOS_DATA = {
 			{
 				id: 14,
 				name: "monacostreet",
-				imageUrl: "./images/Josue_photo_collection/Places/monacostreet.jpg",
+				imageUrl: "https://i.ibb.co/1fsBrny/monacostreet.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -126,7 +126,7 @@ const PHOTOS_DATA = {
 			{
 				id: 15,
 				name: "redcliff",
-				imageUrl: "./images/Josue_photo_collection/Places/redcliff.jpg",
+				imageUrl: "https://i.ibb.co/cyc0Fbt/redcliff.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -134,7 +134,7 @@ const PHOTOS_DATA = {
 			{
 				id: 16,
 				name: "sparklecave",
-				imageUrl: "./images/Josue_photo_collection/Places/sparklecave.jpg",
+				imageUrl: "https://i.ibb.co/k30f2TW/sparklecave.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -142,7 +142,7 @@ const PHOTOS_DATA = {
 			{
 				id: 17,
 				name: "starrysky",
-				imageUrl: "./images/Josue_photo_collection/Places/starrysky.jpg",
+				imageUrl: "https://i.ibb.co/FxtB7sk/starrysky.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -150,7 +150,7 @@ const PHOTOS_DATA = {
 			{
 				id: 18,
 				name: "waterboulder",
-				imageUrl: "./images/Josue_photo_collection/Places/waterboulder.jpg",
+				imageUrl: "https://i.ibb.co/7QKdYBB/waterboulder.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -158,7 +158,7 @@ const PHOTOS_DATA = {
 			{
 				id: 19,
 				name: "waterfall",
-				imageUrl: "./images/Josue_photo_collection/Places/waterfall.jpg",
+				imageUrl: "https://i.ibb.co/ctXH55R/waterfall.jpg",
 				alt: "place",
 				price: 35,
 				code: "PFw45hw"
@@ -181,7 +181,7 @@ const PHOTOS_DATA = {
 			{
 				id: 21,
 				name: "quince2",
-				imageUrl: "https://i.ibb.co/KLKNKjm/quince2.jpg",
+				imageUrl: "https://i.ibb.co/Mcdbwsy/quince2.jpg",
 				alt: "quincena",
 				price: 35,
 				code: "PFw45hw"

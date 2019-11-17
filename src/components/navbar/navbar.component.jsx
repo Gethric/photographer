@@ -16,7 +16,7 @@ const Navbar = ({ hidephotos }) => (
 		<HomeLink />
 		<AboutLink />
 		<PhotosLink />
-		{hidephotos ? null : <Dropdown id="photo" />}
+
 		<ContactLink />
 		<SignInLink />
 	</div>
@@ -27,3 +27,5 @@ const mapStateToProps = createStructuredSelector({
 });
 
 export default connect(mapStateToProps)(Navbar);
+
+//{hidephotos ? null : <Dropdown id="photo" />}

@@ -3,6 +3,9 @@
 
 .wrapper {
 	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
@@ -10,9 +13,9 @@
 }
 
 .main {
-	position: fixed;
+	position: relative;
 	top: 30vh;
-	width: 100%;
+	width: 75%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

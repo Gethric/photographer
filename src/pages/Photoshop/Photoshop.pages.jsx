@@ -5,11 +5,13 @@ import "./Photoshop.styles.scss";
 import { Route } from "react-router-dom";
 import CollectionPage from "../Collection/Collection.page";
 
-const Photoshop = ({ match }) => (
-	<div className="photoshop-page">
-		<Route exact path={`${match.path}`} component={Overview} />
-		<Route path={`${match.path}/:collectionId`} component={CollectionPage} />
-	</div>
-);
-
+const Photoshop = ({ match }) => {
+	console.log(match);
+	return (
+		<div className="photoshop-page">
+			<Route exact path={`${match.path}`} component={Overview} />
+			<Route path={`${match.path}/:collectionId`} component={CollectionPage} />
+		</div>
+	);
+};
 export default Photoshop;

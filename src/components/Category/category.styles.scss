@@ -1,5 +1,5 @@
 .category {
-	min-width: 30%;
+	max-width: 20%;
 	height: 240px;
 	flex: 1 1 auto;
 	display: flex;
@@ -28,11 +28,11 @@
 	}
 
 	&:first-child {
-		margin-right: 7.5px;
+		margin-right: 10px;
 	}
 
 	&:last-child {
-		margin-left: 7.5px;
+		margin-left: 10px;
 	}
 
 	.background-image {
@@ -43,7 +43,8 @@
 	}
 
 	.content {
-		height: 90px;
+		width: 12%;
+		height: 20%;
 		padding: 0 25px;
 		display: flex;
 		flex-direction: column;

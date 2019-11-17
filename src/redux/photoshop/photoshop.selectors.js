@@ -1,9 +1,6 @@
 import { createSelector } from "reselect";
 
-const selectPhotoshop = state => {
-	console.log(state);
-	return state.photoshop;
-};
+const selectPhotoshop = state => state.photoshop;
 
 export const selectPhotos = createSelector(
 	[selectPhotoshop],
@@ -16,7 +13,4 @@ export const selectCollectionsForPreview = createSelector(
 );
 
 export const selectPhoto = photoUrlParam =>
-	createSelector(
-		[selectPhotos],
-		photos => photos[photoUrlParam]
-	);
+	createSelector([selectPhotos], photos => photos[photoUrlParam]);
