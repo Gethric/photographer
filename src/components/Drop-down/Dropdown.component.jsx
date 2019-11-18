@@ -1,21 +1,22 @@
 import React from "react";
 import "./dropdown.styles.scss";
-
-import { selectSectionsSections } from "../../redux/sections/sections.selectors";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import Sections from "../Sections/Sections.component";
+import { selectCollectionsForPreview } from "../../redux/photoshop/photoshop.selectors";
 
-const Dropdown = ({ id, sections }) => (
-	<div className="dropdown" id={id}>
-		{sections.map(({ id, ...otherSectionsProps }) => (
-			<Sections key={id} {...otherSectionsProps} />
-		))}
-	</div>
-);
+const Dropdown = ({ id, collections }) => {
+	return (
+		<div className="dropdown" id={id}>
+			{collections.map(({ id, ...otherCollectionsProps }) => (
+				<Sections key={id} {...otherCollectionsProps} />
+			))}
+		</div>
+	);
+};
 
 const mapStateToProps = createStructuredSelector({
-	sections: selectSectionsSections
+	collections: selectCollectionsForPreview
 });
 
 export default connect(mapStateToProps)(Dropdown);

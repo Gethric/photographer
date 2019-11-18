@@ -2,7 +2,7 @@ const PHOTOS_DATA = {
 	fashion: {
 		id: 1,
 		title: "Fashion",
-		routeName: "fashion",
+		routeName: "/photoshop/fashion",
 		items: [
 			{
 				id: 1,
@@ -97,7 +97,7 @@ const PHOTOS_DATA = {
 	places: {
 		id: 2,
 		title: "Places",
-		routeName: "places",
+		routeName: "/photoshop/places",
 		items: [
 			{
 				id: 12,
@@ -168,7 +168,7 @@ const PHOTOS_DATA = {
 	events: {
 		id: 3,
 		title: "Events",
-		routeName: "events",
+		routeName: "/photoshop/events",
 		items: [
 			{
 				id: 20,

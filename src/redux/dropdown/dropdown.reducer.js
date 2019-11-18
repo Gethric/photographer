@@ -12,6 +12,16 @@ const dropdownReducer = (state = INITIAL_STATE, action) => {
 				...state,
 				hidephotos: !state.hidephotos
 			};
+		case DropdownActionTypes.EXTEND_PHOTO_DROPDOWN_HIDDEN:
+			return {
+				...state,
+				hidephotos: false
+			};
+		case DropdownActionTypes.RETRACT_PHOTO_DROPDOWN_HIDDEN:
+			return {
+				...state,
+				hidephotos: true
+			};
 		case DropdownActionTypes.TOGGLE_FILM_DROPDOWN_HIDDEN:
 			return {
 				...state,

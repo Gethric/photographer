@@ -2,8 +2,8 @@ import React from "react";
 import "./sections.styles.scss";
 import { Link } from "react-router-dom";
 
-const Sections = ({ title, linkUrl }) => (
-	<Link className="section" to={linkUrl}>
+const Sections = ({ title, routeName }) => (
+	<Link className="section" to={routeName} replace>
 		{title}
 	</Link>
 );

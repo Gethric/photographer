@@ -1,0 +1,14 @@
+@import "../../sass/base/typography";
+
+.photoslink {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 20px;
+	width: 100px;
+	margin: 25px;
+	font-family: $raleway;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}

@@ -6,6 +6,7 @@ import { selectPhoto } from "../../redux/photoshop/photoshop.selectors";
 
 const CollectionPage = ({ collection }) => {
 	const { title, items } = collection;
+	console.log(collection);
 	return (
 		<div className="collection">
 			<h2 className="title">{title}</h2>

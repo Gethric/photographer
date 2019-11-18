@@ -1,5 +1,9 @@
 @import "../../sass/base/animations";
 
+.dropdown {
+	animation: dropdown 0.25s linear;
+}
+
 #photo,
 #film {
 	position: absolute;
@@ -9,9 +13,8 @@
 	padding: 20px;
 	border: 1px solid white;
 	background-color: black;
-	top: 65px;
+	top: 50px;
 	z-index: 5;
-	animation: dropdown 0.25s linear;
 
 	.item {
 		height: 40px;
@@ -26,9 +29,9 @@
 }
 
 #photo {
-	right: 500px;
+	position: absolute;
 }
 
 #film {
-	right: 375px;
+	position: absolute;
 }

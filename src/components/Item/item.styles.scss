@@ -11,7 +11,7 @@
 		height: 95%;
 		background-size: cover;
 		background-position: center;
-		margin-bottom: 5px;
+		margin: 5px;
 	}
 
 	.CustomButton {
@@ -37,11 +37,11 @@
 		width: 100%;
 		height: 5%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		font-size: 18px;
 
 		.name {
-			width: 90%;
+			width: 80%;
 			margin-bottom: 15px;
 		}
 
